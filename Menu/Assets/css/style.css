@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+header{
+    background-color:#1d0844;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
+    border-bottom: 6px solid #000000
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color: #fff;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin-right: 20px; /* Adiciona margem direita maior aos botões */
+            padding: 5px 10px; /* Adiciona preenchimento interno aos botões */
+            background-color: #6b25ee /* Cor de fundo dos botões */
+            color: #000000; /* Cor do texto dos botões */
+            cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+            border-radius: 5px; /* Borda arredondada nos botões */
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+display: none;
+}
+@media screen and (max-width: 730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+        
+    
+} 
+    

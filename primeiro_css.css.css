@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0; /* Adicionado para remover a margem padrão do body */
+    padding: 0; /* Adicionado para remover o preenchimento padrão do body */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 3px solid rgb(53, 52, 52);
+    padding: 3px;
+    text-align: left;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: orangered;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
+    border-bottom: 6px solid #000000;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: orangered;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: orangered;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    box-shadow: 0 0 2px #000; /* Corrigido para uma sombra mais visível */
+    background-color: orangered;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    background-color: orangered;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra branca ao passar o mouse */
+
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.container h1 {
+    font-weight: bolder;
+}
+
+.container h3 {
+    font-weight: lighter;
+}
+
+.container .ClasseImagem {
+    display: flex; /* Define um contêiner flexível */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro (se necessário) */
+    height: 100%; /* Define a altura do contêiner */
+    flex-direction: column; /* Empilha os itens verticalmente */
+}
+
+.container .ClasseImagem img {
+    max-width: 500px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.container .ClasseImagem figcaption {
+    margin-top: 10px; /* Adiciona um espaço entre a imagem e a legenda */
+}
+
+
+
+
+
+
+
